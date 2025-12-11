@@ -21,7 +21,7 @@ import InstallManagerQueue from "./pages/InstallManagerQueue";
 import InstallAdminQueue from "./pages/InstallAdminQueue";
 import InstallPhysicalQueue from "./pages/InstallPhysicalQueue";
 
-import RelocationAdminQueue from "./pages/RElocationAdminQueue";
+import RelocationAdminQueue from './pages/RelocationAdminQueue';
 import RelocationPhysicalQueue from "./pages/RelocationPhysicalQueue";
 import RelocationMyRequests from "./pages/RelocationMyRequests";
 
