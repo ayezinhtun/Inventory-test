@@ -56,15 +56,7 @@ export default function Sidebar() {
           <span>Devices</span>
         </Link>
 
-        <Link to="/install/new" className="flex items-center px-3 py-4 rounded-xl border border-gray-300 hover:bg-gray-100 hover:border-blue-700 transition">
-          <ClipboardPlus className="h-5 w-5 mr-2" />
-          <span>New Install</span>
-        </Link>
 
-        <Link to="/relocation/new" className="flex items-center px-3 py-4 rounded-xl border border-gray-300 hover:bg-gray-100 hover:border-blue-700 transition">
-          <ClipboardList className="h-5 w-5 mr-2" />
-          <span>New Relocation</span>
-        </Link>
 
         <Link
           to="/users"
@@ -84,6 +76,19 @@ export default function Sidebar() {
               </Link>
             )}
 
+            {role === 'engineer' && (
+              <Link to="/install/new" className="flex items-center px-3 py-4 rounded-xl border border-gray-300 hover:bg-gray-100 hover:border-blue-700 transition">
+                <ClipboardPlus className="h-5 w-5 mr-2" />
+                <span>New Install</span>
+              </Link>
+            )}
+
+            {role === 'engineer' && (
+              <Link to="/relocation/new" className="flex items-center px-3 py-4 rounded-xl border border-gray-300 hover:bg-gray-100 hover:border-blue-700 transition">
+                <ClipboardList className="h-5 w-5 mr-2" />
+                <span>New Relocation</span>
+              </Link>
+            )}
 
 
             {role === 'admin' && (
