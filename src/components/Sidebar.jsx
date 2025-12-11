@@ -58,16 +58,20 @@ export default function Sidebar() {
 
 
 
-        <Link
-          to="/users"
-          className="flex items-center px-3 py-4 rounded-xl border border-gray-300 hover:bg-gray-100 transiton hover:border-blue-700"
-        >
-          <User className="h-5 w-5 mr-2" />
-          <span>User Management</span>
-        </Link>
 
         {role && (
           <div className="mt-4 space-y-2">
+
+            {(role === 'manager' || role === 'admin') && (
+              <Link
+                to="/users"
+                className="flex items-center px-3 py-4 rounded-xl border border-gray-300 hover:bg-gray-100 transiton hover:border-blue-700"
+              >
+                <User className="h-5 w-5 mr-2" />
+                <span>User Management</span>
+              </Link>
+            )}
+
 
             {role === 'manager' && (
               <Link to="/install/manager" className="flex items-center px-3 py-4 rounded-xl border border-gray-300 hover:bg-gray-100 hover:border-blue-700 transition">
