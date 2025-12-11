@@ -8,6 +8,7 @@ export default function InstallRequestCreate() {
   const [racks, setRacks] = useState([]);
 
   const [availableDevices, setAvailableDevices] = useState([]);
+  
   const [selectedDeviceId, setSelectedDeviceId] = useState("");
 
   const [unitBusy, setUnitBusy] = useState(false);

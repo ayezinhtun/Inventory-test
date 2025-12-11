@@ -15,7 +15,7 @@ export const UserProfileProvider = ({ children }) => {
 
     const [loading, setLoading] = useState(true);
 
-
+    // this is for profile page
     const fetchProfile = async () => {
         if (!user) {
             setProfile(null);
@@ -33,6 +33,7 @@ export const UserProfileProvider = ({ children }) => {
         setLoading(false);
     }
 
+    // this is for to shwo user list in usermanagement
     const fetchUsers = async () => {
         setLoading(true);
         const { data, error } = await supabase.from("user_profile").select("*");
@@ -75,7 +76,7 @@ export const UserProfileProvider = ({ children }) => {
             .eq("id", id);
 
         if (error) {
-            // Rollback if failed
+            // Rollback if failed , meaning when failed to place in the user with the old current role
             setUsers(prev => prev.map(u => u.id === id ? { ...u, role: currentRole } : u));
             alert("Failed to update role: " + error.message);
             return false;
@@ -104,6 +105,7 @@ export const UserProfileProvider = ({ children }) => {
         if (error) alert(error.message);
         else setUsers(prev => prev.filter(u => u.id !== id));
     }
+
 
     useEffect(() => {
         fetchProfile();

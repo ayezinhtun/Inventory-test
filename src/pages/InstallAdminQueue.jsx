@@ -9,6 +9,7 @@ export default function InstallAdminQueue() {
   const load = async () => setRows(await listInstallAdminQueue());
   useEffect(() => { load(); }, []);
 
+
   return (
     <div className="bg-white shadow rounded-lg p-4">
       <h2 className="text-lg font-semibold mb-4">Install Requests (Admin)</h2>

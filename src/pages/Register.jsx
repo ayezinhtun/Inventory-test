@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext'
 import { useState } from 'react'
 
-
 export default function Register() {
 
     const {signUp} = useAuth();
@@ -30,7 +29,7 @@ export default function Register() {
                 password: form.password,
                 full_name: form.full_name
             });
-            alert("Accound created! Check your email");
+            alert("Account created! Check your email");
             navigate("/login");
         }catch(error) {
             alert(error.message);

@@ -2,6 +2,7 @@ import { useAuth } from "../context/AuthContext"; // adjust path
 import { Search } from "lucide-react";
 import { Link } from "react-router-dom";
 
+
 export default function Header() {
   const { user } = useAuth();
 

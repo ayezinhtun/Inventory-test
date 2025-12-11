@@ -14,6 +14,7 @@ const AddRack = ({ onClose, onAdd }) => {
         description: ''
     })
 
+
     const handleChange = (e) => {
         const {name, value} = e.target;
         setForm({...form, [name]: value})
@@ -32,6 +33,7 @@ const AddRack = ({ onClose, onAdd }) => {
             alert('Failed to add Rack')
         }
     }
+    
     const fetchWarehouse = async () => {
         const data = await getWarehouse();
 

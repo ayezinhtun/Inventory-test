@@ -11,6 +11,7 @@ export default function AddDevice() {
     status: "inactive"
   });
   
+  
 
   const submit = async (e) => {
     e.preventDefault();

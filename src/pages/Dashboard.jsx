@@ -5,8 +5,6 @@ import { deleteWarehouse } from "../context/Warehousecontext";
 import UpdateWarehouseModal from "./UpdateWarehouse";
 import { Search } from "lucide-react";
 
-
-
 export default function Dashboard() {
     const [warehouses, setWarehouses] = useState([]);
     const [showModal, setShowModal] = useState(false);

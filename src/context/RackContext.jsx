@@ -20,6 +20,7 @@ export const getRacks = async () => {
     return data;
 }
 
+
 export const createRack = async (rack) => {
     const {data, error } = await supabase
     .from('racks')

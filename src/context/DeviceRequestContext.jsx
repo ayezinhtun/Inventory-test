@@ -4,6 +4,7 @@ import { useUserProfiles } from "./UserProfileContext";
 
 const DeviceRequestContext = createContext();
 
+
 export const DeviceRequestProvider = ({ children }) => {
     const { profile } = useUserProfiles();
 
@@ -39,6 +40,7 @@ export const DeviceRequestProvider = ({ children }) => {
             if (error) throw error;
             return data;
         },
+
         // Install flow
         createInstallRequest: async (payload) => {
             const { data, error } = await supabase
@@ -47,6 +49,8 @@ export const DeviceRequestProvider = ({ children }) => {
                 .select().single();
             if (error) throw error; return data;
         },
+
+        
         listInstallMine: async () => {
             const { data, error } = await supabase
                 .from("install_requests")
