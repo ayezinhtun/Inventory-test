@@ -11,3 +11,5 @@ begin
   return new;
 end;
 $$ language plpgsql security definer;
+
+

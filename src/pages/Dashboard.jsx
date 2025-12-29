@@ -11,7 +11,6 @@ export default function Dashboard() {
     const [selectedWarehouse, setSelectedWarehouse] = useState(null);
     const [showUpdateModal, setShowUpdateModal] = useState(false);
     const [searchTerm, setSearchTerm] = useState("");
-
    
 
     const fetchWarehouse = async () => {
@@ -66,8 +65,6 @@ export default function Dashboard() {
                     <p className="font-semibold text-gray-600">{warehouses.length}</p>
                 </div>
             </div>
-
-
 
 
             <div className="bg-white shadow rounded-lg overflow-auto">

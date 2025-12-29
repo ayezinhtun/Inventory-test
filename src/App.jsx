@@ -15,16 +15,13 @@ import DeviceList from "./pages/DeviceList";
 import InstallRequestCreate from "./pages/InstallRequestCreate";
 import RelocationRequestCreate from "./pages/RelocationRequestCreate";
 import AddDevice from "./pages/AddDevice";
-
 import InstallMyRequests from "./pages/InstallMyRequests";
 import InstallManagerQueue from "./pages/InstallManagerQueue";
 import InstallAdminQueue from "./pages/InstallAdminQueue";
 import InstallPhysicalQueue from "./pages/InstallPhysicalQueue";
-
 import RelocationAdminQueue from './pages/RelocationAdminQueue';
 import RelocationPhysicalQueue from "./pages/RelocationPhysicalQueue";
 import RelocationMyRequests from "./pages/RelocationMyRequests";
-
 import RelocationManagerQueue from "./pages/RelocateManagerQueue";
 // Optional role guard (create src/components/RequireRole.jsx as previously shown)
 import RequireRole from "./components/RequrireRole";

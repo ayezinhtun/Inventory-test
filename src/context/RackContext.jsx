@@ -14,7 +14,6 @@ export const getRacks = async () => {
     `)
     .order('created_at', {ascending: false})
 
-
     if(error) throw error;
 
     return data;
@@ -32,7 +31,6 @@ export const createRack = async (rack) => {
 
     return data;
 }
-
 
 
 export const deleteRack = async (id) => {

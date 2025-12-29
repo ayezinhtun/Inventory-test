@@ -14,8 +14,6 @@ export default function RackPage() {
 
     const [racks, setRacks] = useState([]);
 
-
-
     const [loading, setLoading] = useState(false);
 
     const [showModal, setShowModal] = useState(false);
@@ -30,7 +28,6 @@ export default function RackPage() {
 
 
     const fetchRacks = async () => {
-
         try {
             const data = await getRacks();
             setRacks(data);
